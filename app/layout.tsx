@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     icon: [
       {
         media: "(prefers-color-scheme: light)",
-        url: "/logo.png",
-        href: "/logo.png",
+        url: "/notion.ico",
+        href: "/notion.ico",
       },
       {
         media: "(prefers-color-scheme: dark)",
-        url: "/logo-dark.png",
-        href: "/logo-dark.png",
+        url: "/notion_alt1.ico",
+        href: "/notion_alt1.ico",
       }
     ]
   }
