@@ -21,7 +21,7 @@ export const Logo = () => {
 
 
             <p className={cn("font-semibold", font.className)}>
-                Yotion
+                Notion+
             </p>
         </div>
 
