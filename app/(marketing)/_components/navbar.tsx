@@ -6,6 +6,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Logo } from "./logo";
 import { useConvexAuth } from "convex/react";
 import { SignInButton } from "@clerk/clerk-react";
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
     const { isAuthenticated, isLoading} = useConvexAuth();
@@ -23,7 +24,19 @@ export const Navbar = () => {
 
                 { !isAuthenticated && !isLoading && (
                     <>
-                    <SignInButton/>
+                    <SignInButton mode="modal">
+                        <Button variant="ghost" size='sm'>
+                            Sign In
+                        </Button>
+                    </SignInButton>
+
+
+                    <SignInButton mode="modal">
+                        <Button size='sm'>
+                            Get Notion+
+                        </Button>
+                    </SignInButton>
+                    
                     </>
                 )}
                 <ModeToggle/>
