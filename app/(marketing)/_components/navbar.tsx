@@ -8,6 +8,7 @@ import { useConvexAuth } from "convex/react";
 import { SignInButton } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/spinner";
+import { Link } from "lucide-react";
 
 export const Navbar = () => {
     const { isAuthenticated, isLoading} = useConvexAuth();
@@ -40,6 +41,19 @@ export const Navbar = () => {
                     
                     </>
                 )}
+
+                {isAuthenticated &&  !isLoading &&( 
+                    <>
+                    <Button variant='ghost' size='sm' asChild>
+                        <Link href="/documents">
+
+                            Enter Notion+
+                        </Link>
+
+
+                    </Button>
+                    <UserButton/>
+                    </>)}
                 <ModeToggle/>
             </div>
 
