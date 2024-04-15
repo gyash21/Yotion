@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Logo } from "./logo";
 import { useConvexAuth } from "convex/react";
-import { SignInButton } from "@clerk/clerk-react";
+import { SignInButton, UserButton } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/spinner";
 import { Link } from "lucide-react";
@@ -52,7 +52,9 @@ export const Navbar = () => {
 
 
                     </Button>
-                    <UserButton/>
+                    <UserButton
+                    afterSignOutUrl="/"
+                    />
                     </>)}
                 <ModeToggle/>
             </div>
