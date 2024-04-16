@@ -30,7 +30,7 @@ export const Logo = () => {
             />
 
             <p className={cn("font-semibold", font.className)}>
-                Notion+
+                Yotion+
             </p>
         </div>
 
