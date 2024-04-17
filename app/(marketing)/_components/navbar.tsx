@@ -35,7 +35,7 @@ export const Navbar = () => {
 
                     <SignInButton mode="modal">
                         <Button size='sm'>
-                            Get Notion+
+                            Get Yotion+
                         </Button>
                     </SignInButton>
                     

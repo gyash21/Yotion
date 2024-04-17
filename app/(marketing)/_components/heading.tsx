@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react"
 import { useConvexAuth } from "convex/react"
 import { Spinner } from "@/components/spinner"
 import Link from 'next/link'
+import { SignInButton } from "@clerk/clerk-react"
 
 export const Heading = () => {
 
@@ -31,6 +32,17 @@ export const Heading = () => {
                     </Link>
                 </Button>
             )}
+
+
+            { !isAuthenticated && !isLoading && (
+                <SignInButton>
+            <Button>
+                Get Yotion now <ArrowRight className="h-4 w-4 ml-2"/>
+            </Button>
+                </SignInButton>
+            )}  
+
+
         </div>
     )
 }
