@@ -7,7 +7,7 @@ import { ConvexClientProvider} from '@/components/providers/convex-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Notion+',
+  title: 'Yotion+',
   description: 'Your all in one workspace',
   icons: {
     icon: [
